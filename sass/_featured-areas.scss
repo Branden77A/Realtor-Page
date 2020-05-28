@@ -1,0 +1,83 @@
+.featured-areas {
+    position: relative;
+    // background-image: linear-gradient(to right bottom, #fff, rgb(70, 67, 67));
+
+
+    background-image: url(../img/map-popup.jpg);
+    background-size: 100%;
+    background-position: 0 50%;
+
+
+    grid-row: 4 / 5;
+    grid-column: sidebar-start / full-end;
+
+    padding: 5rem 9rem;
+
+    margin-bottom: 15vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        position: absolute;
+
+    }
+
+    // &__list {
+    //     list-style: none;
+    //     background-color: green;
+    //     display: flex;
+    //     flex-direction: column;
+    //     height: 100%;
+        
+    // }
+
+    // &__item {
+    //     background-color: blue;
+    // }
+
+    // &__link {
+    //     color: white;
+    //     font-family: $font-primary;
+    //     font-size: 1.5rem;
+    //     letter-spacing: .4px;
+    //     text-decoration: none;
+    // }
+}
+
+// .map-test {
+//     align-self: center;
+//     width: 40%;
+    
+
+//     &__svg {
+
+//         &--h1 {
+//             fill: blue;
+
+
+//             transform: translate(-250px, -400px);
+
+//         }
+
+//         // & path {
+//         //     fill: #dcdbdb;
+            
+//         // }
+
+
+
+//         // & path .map-test__svg--h1 {
+//         //     fill: blue;
+//         // }
+
+
+//         &--1:hover &--h1 {
+//             opacity: 1;
+//         }
+
+//         &--2 {
+
+//         }
+//     }
+// }

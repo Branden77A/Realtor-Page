@@ -1,0 +1,94 @@
+// COLORS 
+
+$color-primary: #481925;
+$color-secondary: #A2906F;
+$color-tertiary: rgb(230, 193, 138);
+$color-quaternary: #44434A;
+$color-quinary: #212030;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-light-3: #9d9d9d;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// TRANSITIONS TIMES
+$transition-1: .6s;
+$transition-2: .25s;
+$transition-c: .35s;
+
+//FONTS 
+$font-primary: 'PT Sans Narrow', sans-serif;
+$font-secondary: 'Cormorant Garamond', serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-phone-small: 23.5em; 
+$bp-phone-big: 25.9em;   
+$bp-ipad: 48em;
+$bp-pro: 64em;
+
+
+/* MOBILE VIEWPORT SIZES BY OCCURANCE RATE
+375x667  --> 25.98%
+360x640  --> 21.22%
+414x736  --> 10.53%
+320x568  --> 9.83%
+360x740  --> 4.99%
+375x812  --> 4.91% */ 
+
+/*TABLET VIEWPORT SIZES BY OCCURANCE RATE
+768x1024  --> 75.23%
+1280x800  --> 3.97%
+1024x1366  --> 3.55%
+834x1112  --> 2.52%
+800x1280   --> 1.86%
+1024x768  --> 1.59%*/
+
+/*DESKTOP VIEWPORT SIZES BY OCCURANCE RATE
+1920x1080  --> 21.72%
+1366x768  --> 18.57%
+1440x900  --> 8.94%
+1280x800  --> 6.1%
+1536x864  --> 6.05%
+1600x900  --> 5.28%*/
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; 
+
+    @media only screen and (max-width: $bp-pro) {
+      font-size: 50%;
+    }
+}
+
+body {
+
+ 
+
+ }
+
+ .container {
+    display: grid;
+
+    grid-template-columns: [sidebar-start] 9rem [sidebar-end center-start]
+                            repeat(8, [col-start] minmax(min-content, 1fr)
+                            [col-end]) [center-end] 9rem [full-end];
+
+    grid-template-rows: 9rem 45vw min-content 100vh; //change to 52vw from 100vh
+
+    @media only screen and (max-width: $bp-phone-big) {
+      grid-template-rows: 9rem 45vh min-content;
+    }
+
+ }
